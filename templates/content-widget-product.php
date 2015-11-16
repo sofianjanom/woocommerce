@@ -27,6 +27,6 @@ global $product; ?>
 		<?php echo $product->get_image(); ?>
 		<span class="product-title"><?php echo $product->get_title(); ?></span>
 	</a>
-	<?php if ( get_option( 'woocommerce_enable_review_rating' ) === 'yes' /**/) echo $product->get_rating_html(); ?>
+	<?php if ( get_option( 'woocommerce_enable_review_rating' ) === 'yes') echo $product->get_rating_html(); ?>
 	<?php echo $product->get_price_html(); ?>
 </li>
